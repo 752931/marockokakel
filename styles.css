@@ -1,0 +1,134 @@
+/* Allmänt */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #fdfaf5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #b33c00, #e07a5f);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg') center/cover no-repeat;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  background-color: #e07a5f;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background-color: #b33c00;
+}
+
+/* Kategorier */
+#categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#categories h2 {
+  margin-bottom: 20px;
+  color: #b33c00;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.2s;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.product p {
+  margin: 0 0 15px;
+  font-size: 0.9rem;
+}
+
+/* Om oss & Kontakt */
+#about, #contact {
+  padding: 40px 20px;
+  background-color: #faf3e0;
+}
+
+#about h2, #contact h2 {
+  color: #b33c00;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
